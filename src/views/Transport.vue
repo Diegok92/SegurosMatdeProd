@@ -193,11 +193,13 @@ export default {
 				"https://script.google.com/macros/s/AKfycbzQINUw9bE3dBw5bslOSO8CZS9vklSpFw-pOYA6iPwSwfRfBhkRp0z5RTvUIE22O2Q5/exec";
 
 			axios
-				.post(proxyUrl + googleScriptUrl, new URLSearchParams(data))
+				.post("http://localhost:5000/submit-form", data)
 				.then(() =>
 					alert("Cotización solicitada y datos enviados a Google Sheets")
 				)
-				.catch(() => alert("Error al enviar la cotización"));
+				.catch(() =>
+					alert("Error al enviar la cotización. Inténtalo nuevamente.")
+				);
 		},
 		getServiceImage(imageName) {
 			return new URL(
