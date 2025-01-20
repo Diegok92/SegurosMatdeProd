@@ -4,7 +4,7 @@
 
 		<!-- Resumen de Servicios -->
 		<section class="services-summary container my-4">
-			<h2 class="services-title text-center mb-5">Conocé Nuestros Seguros</h2>
+			<h2 class="services-title text-center mb-5">Te Cubrimos:</h2>
 			<div class="row">
 				<div
 					class="col-md-4 mb-4"

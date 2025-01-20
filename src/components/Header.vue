@@ -152,10 +152,16 @@
 							</ul>
 						</li>
 						<li class="nav-item">
+							<router-link to="/services" class="nav-link" @click="closeMenu">
+								<span>SERVICIOS</span>
+							</router-link>
+						</li>
+						<li class="nav-item">
 							<router-link to="/about" class="nav-link" @click="closeMenu">
 								<span>NOSOTROS</span>
 							</router-link>
 						</li>
+
 						<li class="nav-item">
 							<router-link to="/contact" class="nav-link" @click="closeMenu">
 								<span>CONTACTO</span>
@@ -218,7 +224,7 @@ header {
 }
 
 .container {
-	max-width: 1100px;
+	max-width: 1165px;
 }
 
 .logo-container {
